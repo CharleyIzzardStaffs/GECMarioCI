@@ -3,6 +3,8 @@
 #include <iostream>
 #include "Constants.h"
 #include "Commons.h"
+#include "Character.h"
+#include "Texture2D.h"
 using namespace std;
 class Texture2D;
 class Character
@@ -15,6 +17,11 @@ public:
 	void SetPositon(Vector2D new_position);
 	Vector2D GetPosition();
 	virtual void AddGravity(float deltaTime);
+	float GetCollisionRadius();
+	Rect2D GetCollisionBox() {
+		return Rect2D(m_position.x, m_position.y,
+			m_texture->GetWidth(), m_texture->GetHeight());
+	}
 private:
 	FACING m_facing_direction;
 protected:
@@ -29,5 +36,6 @@ protected:
 	bool m_can_jump;
 	float m_jump_force;
 	virtual void Jump();
+	float m_collision_radius;
 };
 

@@ -10,6 +10,7 @@ Character::Character(SDL_Renderer* renderer, string impagePath, Vector2D start_p
 	/*m_facing_direction = FACING_RIGHT;*/
 	m_moving_left = false;
 	m_moving_right = false;
+	m_collision_radius = 15.0f;
 }
 Character::~Character() {
 	m_renderer = nullptr;
@@ -64,4 +65,7 @@ void Character::Jump() {
 		m_jumping = true;
 		m_can_jump = false;
 	}
+}
+float Character::GetCollisionRadius() {
+	return m_collision_radius;
 }

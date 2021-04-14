@@ -42,7 +42,7 @@ bool InitSDL()
 	}
 	else
 	{
-		g_window = SDL_CreateWindow("Games Engine Creation", //create window if setup success
+		g_window = SDL_CreateWindow("Sad Mario", //create window if setup success
 			SDL_WINDOWPOS_UNDEFINED,
 			SDL_WINDOWPOS_UNDEFINED,
 			SCREEN_WIDTH,
