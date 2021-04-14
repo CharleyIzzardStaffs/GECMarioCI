@@ -1,0 +1,10 @@
+﻿  Character.cpp
+  CharacterLuigi.cpp
+  CharacterMario.cpp
+  GameScreenLevel1.cpp
+  GameScreenManager.cpp
+  Main.cpp
+  Generating Code...
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Main.cpp(74): warning C4715: 'InitSDL': not all control paths return a value
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(43): warning C4715: 'GameScreenLevel1::SetUpLevel': not all control paths return a value
+  GECMarioCI.vcxproj -> C:\Users\charley\source\repos\GECMarioCI\Debug\GECMarioCI.exe
