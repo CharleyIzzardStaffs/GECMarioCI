@@ -12,6 +12,7 @@ GameScreen::~GameScreen() //destructor
 }
 void GameScreen::Render() 
 {
+	//testing
 }
 void GameScreen::Update(float deltaTime, SDL_Event e) 
 {
