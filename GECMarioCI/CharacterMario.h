@@ -3,7 +3,7 @@
 class CharacterMario : public Character
 {
 public:
-	CharacterMario(SDL_Renderer* renderer, string imagepath, Vector2D start_position);
+	CharacterMario(SDL_Renderer* renderer, string imagepath, Vector2D start_position, LevelMap* map);
 	~CharacterMario();
 	virtual void Update(float deltatime, SDL_Event e);
 private:

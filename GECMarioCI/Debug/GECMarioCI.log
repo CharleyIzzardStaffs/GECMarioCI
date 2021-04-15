@@ -1,5 +1,5 @@
 ﻿  GameScreenLevel1.cpp
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(51): warning C4715: 'GameScreenLevel1::SetUpLevel': not all control paths return a value
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(24,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(24,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(54): warning C4715: 'GameScreenLevel1::SetUpLevel': not all control paths return a value
   GECMarioCI.vcxproj -> C:\Users\charley\source\repos\GECMarioCI\Debug\GECMarioCI.exe

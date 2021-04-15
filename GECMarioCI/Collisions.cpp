@@ -27,5 +27,4 @@ bool Collisions::Box(Rect2D rect1, Rect2D rect2) {
 		return true;
 	}
 	return false;
-
 }
