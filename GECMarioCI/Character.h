@@ -17,27 +17,29 @@ public:
 	virtual void Update(float deltaTime, SDL_Event e);
 	void SetPositon(Vector2D new_position);
 	Vector2D GetPosition();
-	virtual void AddGravity(float deltaTime);
+	
 	float GetCollisionRadius();
 	Rect2D GetCollisionBox() {
 		return Rect2D(m_position.x, m_position.y,
-			m_texture->GetWidth(), m_texture->GetHeight());
-	}
+			m_texture->GetWidth(), m_texture->GetHeight()); }
+	bool IsJumping() { return m_jumping; }
+	void CancelJump() { m_jumping = false; }
 private:
 	LevelMap* m_current_level_map;
 protected:
 	SDL_Renderer* m_renderer;
 	Vector2D m_position;
 	Texture2D* m_texture;
-	bool m_moving_right;
-	bool m_moving_left;
+	FACING m_facing_direction;
 	virtual void MoveLeft(float deltaTime);
 	virtual void MoveRight(float deltaTime);
+	virtual void AddGravity(float deltaTime);
+	virtual void Jump();
 	bool m_jumping;
 	bool m_can_jump;
+	bool m_moving_right;
+	bool m_moving_left;
 	float m_jump_force;
-	virtual void Jump();
 	float m_collision_radius;
-	FACING m_facing_direction;
 };
 

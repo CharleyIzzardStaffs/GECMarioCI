@@ -14,7 +14,6 @@ LevelMap::LevelMap(int map[MAP_HEIGHT][MAP_WIDTH]) {
 	}
 }
 LevelMap::~LevelMap() {
-
 	for (unsigned int i = 0; i < MAP_HEIGHT; i++)
 	{
 		delete[] m_map[i];

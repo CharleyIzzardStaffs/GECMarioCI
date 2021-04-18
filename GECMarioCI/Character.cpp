@@ -6,7 +6,7 @@ Character::Character(SDL_Renderer* renderer, string impagePath, Vector2D start_p
 	m_texture = new Texture2D(m_renderer);
 	if (!m_texture->LoadFromFile(impagePath))
 		cout << "Failed to Load Image" << endl;
-	/*m_facing_direction = FACING_RIGHT;*/
+	m_facing_direction = FACING_RIGHT;
 	m_moving_left = false;
 	m_moving_right = false;
 	m_collision_radius = 15.0f;
@@ -14,6 +14,9 @@ Character::Character(SDL_Renderer* renderer, string impagePath, Vector2D start_p
 }
 Character::~Character() {
 	m_renderer = nullptr;
+}
+float Character::GetCollisionRadius() {
+	return m_collision_radius;
 }
 void Character::Render() {
 	m_texture->Render(m_position, SDL_FLIP_NONE);
@@ -45,7 +48,6 @@ void Character::Update(float deltaTime, SDL_Event e) {
 	{
 		m_can_jump = true; //collided so can jump again
 	}
-
 }
 void Character::SetPositon(Vector2D new_position) {
 	m_position = new_position;
@@ -75,7 +77,4 @@ void Character::Jump() {
 		m_jumping = true;
 		m_can_jump = false;
 	}
-}
-float Character::GetCollisionRadius() {
-	return m_collision_radius;
 }
