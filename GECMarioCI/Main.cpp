@@ -93,7 +93,6 @@ bool Update()
 		//click x = quit
 	case SDL_QUIT:
 		return true;
-
 	case SDL_KEYUP:
 		switch (e.key.keysym.sym)
 		{

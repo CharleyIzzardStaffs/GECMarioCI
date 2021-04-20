@@ -6,7 +6,9 @@
 #include "Character.h"
 #include "CharacterMario.h"
 #include "CharacterLuigi.h"
+#include "CharacterKoopa.h"
 #include "LevelMap.h"
+#include <vector>
 //class Character;
 class CharacterLuigi;
 class CharactrerMario;
@@ -33,6 +35,11 @@ private:
 	float m_wobble;
 	float m_background_yPos;
 	void DoScreenShake();
+	void UpdateEnemies(float deltatime, SDL_Event e);
+	void CreateKoopa(Vector2D position, FACING direction, float speed);
+	vector<CharacterKoopa*> m_enemies;
+protected:
+	bool m_alive;
 };
 #endif //_GAMESCREENLEVEL1_H
 #include "GameScreen.h"
@@ -41,3 +48,4 @@ private:
 #include "CharacterMario.h"
 #include "CharacterLuigi.h"
 #include "LevelMap.h"
+#include <vector>
