@@ -30,10 +30,12 @@ C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,47): warning 
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\PowBlock.h(11,110): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(33,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(44,20): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(153,21): warning C4018: '<': signed/unsigned mismatch
   GameScreenManager.cpp
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Main.cpp
   Generating Code...
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(87): warning C4715: 'GameScreenLevel1::SetUpLevel': not all control paths return a value
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Main.cpp(74): warning C4715: 'InitSDL': not all control paths return a value
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(100): warning C4715: 'GameScreenLevel1::SetUpLevel': not all control paths return a value
   GECMarioCI.vcxproj -> C:\Users\charley\source\repos\GECMarioCI\Debug\GECMarioCI.exe
