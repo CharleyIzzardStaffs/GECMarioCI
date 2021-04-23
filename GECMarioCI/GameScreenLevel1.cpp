@@ -5,6 +5,7 @@
 #include "Texture2D.h"
 #include "CharacterMario.h"
 #include "CharacterLuigi.h"
+#include "CharacterKoopa.h"
 #include "Collisions.h"
 #include "Character.h"
 #include "PowBlock.h"
@@ -51,7 +52,8 @@ void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
 			m_background_yPos = 0.0f;
 		}
 	}
-	Mario->Update(deltaTime, e);
+	UpdateEnemies(deltaTime, e);
+	Mario->Update(deltaTime, e); //Chacater updates
 	Luigi->Update(deltaTime, e);
 	if (Collisions::Instance()->Circle(Mario, Luigi)) {
 		cout << "Circle hit!" << endl;
@@ -60,10 +62,12 @@ void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
 		cout << "Box hit!" << endl;
 	}
 	UpdatePOWBlock();
-	UpdateEnemies(deltaTime, e);
+
+	//Attempting to make death work (it doesn't work)
 	if (Mario->SetAlive(false)) {
 		Mario->SetPositon(Vector2D(64, 330));
 		Mario->SetAlive(true);
+		Mario->Lives--;
 		cout << "Mario's Lives: " << Mario->Lives << endl;
 	}
 	if (Mario->Lives == 0) {
@@ -79,10 +83,23 @@ void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
 		cout << "Luigi is out of lives!" << endl;
 		SDL_Quit();
 	}
+	switch (e.type) // death test
+	{
+	case SDL_KEYDOWN:
+		switch (e.key.keysym.sym)
+		{
+		case SDLK_e:
+			Mario->SetAlive(true);
+			break;
+		}
+	}
 }
 bool GameScreenLevel1::SetUpLevel() 
 {
 	SetLevelMap();
+	CreateKoopa(Vector2D(50, 32), FACING_RIGHT, KOOPA_SPEED);
+	CreateKoopa(Vector2D(100, 32), FACING_RIGHT, KOOPA_SPEED);
+	CreateKoopa(Vector2D(200, 32), FACING_RIGHT, KOOPA_SPEED);
 	Mario = new CharacterMario (m_renderer, "Images/Mario.png", Vector2D(64, 330), m_level_map);
 	Luigi = new CharacterLuigi(m_renderer, "Images/Luigi.png", Vector2D(448, 330),m_level_map);
 	m_background_texture = new Texture2D(m_renderer);
@@ -95,8 +112,6 @@ bool GameScreenLevel1::SetUpLevel()
 	m_screenshake = false;
 	m_background_yPos = 0.0f;
 	cout << "Mario's Lives: " << Mario->Lives << endl << "Luigi's Lives: " << Luigi->Lives << endl;
-
-	
 }
 void GameScreenLevel1::SetLevelMap() {
 		int map[MAP_HEIGHT][MAP_WIDTH] = { { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 },
@@ -127,6 +142,7 @@ void GameScreenLevel1::UpdatePOWBlock() {
 			if (Mario->IsJumping()) //collided while jumping
 			{
 				DoScreenShake();
+				cout << "pow block hit" << endl;
 				m_pow_block->TakeHit();
 				Mario->CancelJump();
 			}
@@ -140,6 +156,7 @@ void GameScreenLevel1::UpdatePOWBlock() {
 			if (Luigi->IsJumping()) //collided while jumping
 			{
 				DoScreenShake();
+				cout << "pow block hit" << endl;
 				m_pow_block->TakeHit();
 				Luigi->CancelJump();
 			}
@@ -184,6 +201,7 @@ void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e) {
 					if (m_enemies[i]->GetInjured())
 					{
 						m_enemies[i]->SetAlive(false);
+						cout << "Koopa is die" << endl;
 					}
 					else
 					{
@@ -199,7 +217,7 @@ void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e) {
 					}
 					else
 					{
-						//kill mario
+						//kill LUigi
 						Luigi->SetAlive(false);
 					}
 				}
@@ -216,5 +234,7 @@ void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e) {
 	}
 }
 void GameScreenLevel1::CreateKoopa(Vector2D position, FACING direction, float speed) {
-
+	Koopa = new CharacterKoopa(m_renderer, "images/Koopa.png", m_level_map, position, FACING_RIGHT, KOOPA_SPEED);
+	cout << "koopa is real" << endl;
+	m_enemies.push_back(Koopa);
 }

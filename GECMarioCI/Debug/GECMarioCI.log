@@ -1,41 +1,24 @@
-﻿  Character.cpp
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  CharacterKoopa.cpp
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  CharacterKoopa.cpp
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(24,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(24,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(7,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(8,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(52,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(54,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(55,40): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(55,40): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(55,59): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(55,59): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(55,42): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(55,42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(55,61): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(55,61): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(56,66): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(56,66): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(56,85): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\CharacterKoopa.cpp(56,85): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  CharacterLuigi.cpp
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  CharacterMario.cpp
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Collisions.cpp
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   GameScreenLevel1.cpp
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(24,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(24,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\PowBlock.h(11,110): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(33,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(153,21): warning C4018: '<': signed/unsigned mismatch
-  GameScreenManager.cpp
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Character.h(23,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Main.cpp
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(34,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(170,21): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\Main.cpp(74): warning C4715: 'InitSDL': not all control paths return a value
-C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(100): warning C4715: 'GameScreenLevel1::SetUpLevel': not all control paths return a value
+C:\Users\charley\source\repos\GECMarioCI\GECMarioCI\GameScreenLevel1.cpp(115): warning C4715: 'GameScreenLevel1::SetUpLevel': not all control paths return a value
   GECMarioCI.vcxproj -> C:\Users\charley\source\repos\GECMarioCI\Debug\GECMarioCI.exe

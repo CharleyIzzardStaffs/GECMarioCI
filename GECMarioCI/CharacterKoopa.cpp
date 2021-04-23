@@ -52,7 +52,7 @@ void CharacterKoopa::Render() {
 	int left = 0.0f; //variable to hold the left position of the sprite we want to draw
 	if (m_injured) //if injured move the left position to be the left position of the second image of the sprite sheet
 		left = m_single_sprite_w;		   
-	SDL_Rect portion_of_sprite = { left,0,m_single_sprite_w, m_single_sprite_h }; //get the portion of the sprite sheet you want to draw {xPos, yPos, width of sprite, height of sprite}		
+	SDL_Rect portion_of_sprite = { left, 0, m_single_sprite_w, m_single_sprite_h }; //get the portion of the sprite sheet you want to draw {xPos, yPos, width of sprite, height of sprite}		
 	SDL_Rect destRect = { (int)(m_position.x), (int)(m_position.y), m_single_sprite_w, m_single_sprite_h }; //determine where you want it drawn
 	if (m_facing_direction == FACING_RIGHT) //then draw it facing the correct direction
 	{

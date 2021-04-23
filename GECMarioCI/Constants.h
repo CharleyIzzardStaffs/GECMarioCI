@@ -16,3 +16,4 @@
 #define CHARACTER_START_HEIGHT 330;
 #define LUIGI_START
 #define MARIO_START
+#define KOOPA_SPEED 96.0f

@@ -36,6 +36,7 @@ private:
 	float m_background_yPos;
 	void DoScreenShake();
 	void UpdateEnemies(float deltatime, SDL_Event e);
+	CharacterKoopa* Koopa;
 	void CreateKoopa(Vector2D position, FACING direction, float speed);
 	vector<CharacterKoopa*> m_enemies;
 protected:
